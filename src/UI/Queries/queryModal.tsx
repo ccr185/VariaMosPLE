@@ -41,7 +41,7 @@ export default function QueryModal({
 }: QueryModalProps) {
   const [key, setKey] = useState("query");
   const [translatorEndpoint, setTranslatorEndpoint] = useState(
-    "http://localhost:5000/query"
+    "http://18.191.107.28:5000/query"
   );
   const [query, setQuery] = useState("");
   const [queryInProgress, setQueryInProgress] = useState(false);
