@@ -1,15 +1,8 @@
 {
-<<<<<<< HEAD
   "version": "4.22.09.16.10",
   "urlBackEndLanguage": "https://variamos-ms-languages.azurewebsites.net",
   "urlBackEndRestriction": "https://variamos-ms-restrictions.azurewebsites.net",
   "urlBackEndRestrictiondev": "http://localhost:4003",
-=======
-  "version": "4.22.06.05.09",
-  "urlBackEndLanguage": "http://vlang:4000",
-  "urlBackEndRestriction": "http://vrest:4003",
-  "urlBackEndRestrictiondev": "http://vrest:4003",
->>>>>>> d28a375 (change addrs for svcs)
   "_comment.environment": "The environments available are development and production",
   "environment": "development",
   "urlVariamosDocumentation": "https://github.com/variamosple/VariaMosPLE/wiki",
