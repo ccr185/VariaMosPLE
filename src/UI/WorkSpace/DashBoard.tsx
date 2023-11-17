@@ -4,16 +4,16 @@ import ElementsPannel from "../DiagramEditor/ElementsPannel";
 import PropiertiesPannel from "../DiagramEditor/PropiertiesPannel";
 import ProjectManagement from "../ProjectManagement/ProjectManagement";
 import TreeExplorer from "../TreeExplorer/TreeExplorer";
-import NavBar from "./navBar";
 import ProjectService from "../../Application/Project/ProjectService";
 import TreeMenu from "../TreeExplorer/TreeMenu";
 import { getUserProfile } from "../SignUp/SignUp.utils";
 import Layout from "../../core/components/Layout";
+import "./DashBoard.css";
 
 interface Props {
   loginEnabled?: boolean;
 }
-interface State {}
+interface State { }
 
 class DashBoard extends Component<Props, State> {
   state = {};
@@ -23,7 +23,7 @@ class DashBoard extends Component<Props, State> {
     super(props);
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
   render() {
     const userProfile = getUserProfile();
