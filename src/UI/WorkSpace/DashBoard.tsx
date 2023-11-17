@@ -8,9 +8,10 @@ import NavBar from "./navBar";
 import ProjectService from "../../Application/Project/ProjectService";
 import TreeMenu from "../TreeExplorer/TreeMenu";
 import { getUserProfile } from "../SignUp/SignUp.utils";
+import Layout from "../../core/components/Layout";
 
 interface Props {
-  loginEnabled?: boolean
+  loginEnabled?: boolean;
 }
 interface State {}
 
@@ -28,14 +29,15 @@ class DashBoard extends Component<Props, State> {
     const userProfile = getUserProfile();
 
     if (this.props.loginEnabled && !userProfile) {
-      window.location.href = '/';
-      return (null)
+      window.location.href = "/";
+      return null;
     }
 
     return (
-      <div className="container-fluid">
-        <ProjectManagement projectService={this.projectService} />
-
+      <Layout>
+        <div className="container-fluid">
+          <ProjectManagement projectService={this.projectService} />
+        </div>
         <div className="row" id="explorer">
           <TreeMenu projectService={this.projectService} />
           <TreeExplorer projectService={this.projectService} />
@@ -52,7 +54,7 @@ class DashBoard extends Component<Props, State> {
             </div>
           </div>
         </div>
-      </div>
+      </Layout>
     );
   }
 }
